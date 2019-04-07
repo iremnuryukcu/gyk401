@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HealthFragment">
+    
+    <ImageView
+        android:id="@+id/imageViewHealthPicture"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_news"
+        />
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:text="Sağlıklı Olmak İçin 5 İpucu"
+        android:layout_below="@id/imageViewHealthPicture"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_below="@id/textViewTitle"
+        >
+
+        <TextView
+            android:id="@+id/textViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/healthy_hint"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+    </ScrollView>
+
+
+</RelativeLayout>
